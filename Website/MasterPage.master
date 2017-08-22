@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            text-align: center;
+            color: #FFFFFF;
+            height: 26px;
+        }
+        .auto-style3 {
+            text-align: center;
+            width: 343px;
+            height: 26px;
+        }
+        .newStyle1 {
+            font-family: "footlight MT Light";
+            border-style: double;
+            color: #FFFFFF;
+            font-size: large;
+        }
+        .auto-style5 {
+            height: 89px;
+            font-size: 45pt;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .auto-style6 {
+            text-align: left;
+            width: 93px;
+            height: 26px;
+        }
+        .auto-style7 {
+            text-align: center;
+            width: 177px;
+            height: 26px;
+        }
+        .auto-style8 {
+            text-align: center;
+            width: 154px;
+            height: 26px;
+        }
+        .auto-style9 {
+            text-align: center;
+            width: 258px;
+            height: 26px;
+        }
+        .auto-style10 {
+            font-size: x-large;
+        }
+        .masterM {
+            font-family: "footlight MT Light";
+            background-color: #000000;
+            border: 3px solid #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-image: url('/images/126c4f2f3cbe0dd1c2955d3f5e4dd3d03.jpg'); width: 1300px; height: 650px">
+        \\<table style="width:100%;">
+            <tr>
+                <td class="auto-style5">NeoMan</td>
+            </tr>
+        </table>
+        <table style="width: 100%;" class="masterM">
+            <tr>
+                <td class="auto-style3">
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" style="height: 26px" Text="Home" ToolTip="go to the home page" />
+                    
+                </td>
+                <td class="auto-style8">
+                    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" style="text-align: center" Text="About Us" />
+                </td>
+                <td class="auto-style7">
+                    <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" style="text-align: left; margin-left: 0px" Text="Myneo" ToolTip="login or register" />
+                </td>
+                <td class="auto-style6">
+                    <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" style="height: 26px" Text="Shopping Cart" ToolTip="check your cart contents" />
+                </td>
+                <td class="auto-style9">
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Contact Us" />
+                </td>
+                <td class="auto-style2">
+                    <span class="auto-style10">welcome:</span><asp:TextBox ID="Log" runat="server" Height="16px"></asp:TextBox>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
